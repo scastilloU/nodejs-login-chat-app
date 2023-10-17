@@ -2,14 +2,14 @@
 const { Database } = require('sqlite3')
 const { open } = require('sqlite')
 
-const app = require('./app') // testing
+const app = require('./app') // testing  here again
 
 const { Server } = require('socket.io')
 const http = require('http')
 
 const chatHandler = require('./handler/chat')
 
-// Function to setup database if it doesn't exist; this will run on start   algo mas   aqui *****
+// Function to setup database if it doesn't
 const setupDatabase = async () => {
     // Open accounts database
     const accDb = await open({
